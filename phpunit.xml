@@ -1,0 +1,7 @@
+<phpunit bootstrap="tests/phpunit-bootstrap.php">
+  <testsuites>
+    <testsuite name="Shopify">
+      <file>ShopifyTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
