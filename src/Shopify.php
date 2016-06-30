@@ -95,6 +95,14 @@
                     $json['product'][$key][] = $arrTmp;
                 } // elseif( is_array($key) ) end
             } // foreach( $this->arrItem as $key => $tag ) end
+            // Images searching
+            if( isset($_POST['images']) ) {
+                $arrImages = is_array($_POST['images'])?$_POST['images']:array($_POST['images']);
+                foreach($arrImages as $imgTag)
+                {
+                    $json['product']['images'][]['src'] = $imgTag;
+                }
+            }
 
             // send to the site
             try
